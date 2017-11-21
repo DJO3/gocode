@@ -7,6 +7,7 @@ import (
 	"fmt"
 )
 
-func hello() {
+// Hello is exported via a Capital letter
+func Hello() {
 	fmt.Println("Hello World")
 }
