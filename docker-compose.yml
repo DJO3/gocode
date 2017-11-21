@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  golang:
+    restart: always
+    image: golang:1.9.2-alpine3.6
+    container_name: golang
+    volumes:
+      - ./main.go:/go/src/main.go
+      - ./hello:/go/src/hello
+    working_dir: /go/src  
+    stdin_open: true
+    tty: true
